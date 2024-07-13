@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-text {
+  background-image: linear-gradient(to right, #97dffc, #858ae3, #613dc1, #4e148c, #613dc1);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.custom-tag-text {
+  background-image: linear-gradient(to right, #97dffc, #858ae3, #613dc1);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* cursor */
+.cursor {
+  display: inline-block;
+  background-color: #ffffff;
+  animation: blink 1s step-end infinite;
+  margin-left: 1.5rem;
+  width: 4px;
+  height: 1em;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* fade in all li */
+ul li {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+ul li:nth-child(1) {
+  animation-delay: 0.15s;
+}
+
+ul li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
