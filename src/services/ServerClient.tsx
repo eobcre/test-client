@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const axiosClient = axios.create({
   // baseURL: import.meta.env.VITE_LOCAL_URL,
-  baseURL: import.meta.env.VITE_URL,
+  baseURL: 'https://main.drx59jghxgkiw.amplifyapp.com/',
 });
 
 interface getParams {
